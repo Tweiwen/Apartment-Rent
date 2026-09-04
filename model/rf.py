@@ -65,7 +65,7 @@ def train_model(
         cv=3,
         scoring="neg_mean_squared_error",
         random_state=42,
-        n_jobs=-1,
+        n_jobs=1,
         return_train_score=True,
     )
     random_search.fit(X_cv, y_cv)
