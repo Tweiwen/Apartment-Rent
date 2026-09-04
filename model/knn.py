@@ -69,7 +69,7 @@ def train_model(
         param_grid=param_grid,
         cv=3,
         scoring="neg_mean_squared_error",
-        n_jobs=-1,
+        n_jobs=1,
         return_train_score=True,
     )
     grid_search.fit(X_cv, y_cv)
